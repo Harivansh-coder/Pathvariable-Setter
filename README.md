@@ -1,2 +1,2 @@
 # Pathvariable-Setter
-a simple GUI program to set system path.
+A simple python GUI script to set environment variable.
