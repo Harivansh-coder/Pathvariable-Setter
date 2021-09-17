@@ -21,11 +21,8 @@ out_label.grid(row=2, column=1)
 def set_path():
     path = path_value.get() # taking the path value from user
     
-    old_path = os.environ.get('path')
-
-    new_path = old_path +";"+ path
     try:
-        os.environ['path'] = new_path
+        os.environ['PATH'] += r'{}'.format(path)
     except:
         out_label.config(text = "Failed")
         return
